@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- rimix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Interiorist</title>
+</head>
+
+<body>
+
+    <main>
+        <header class="bg-black py-3 lg:px-20 px-10 flex justify-between">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="logo" class="w-32">
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex flex-col">
+                <!-- Social Links -->
+                <div class="social_links flex justify-end h-1/3">
+                    <ul class="flex gap-5 py-2">
+                        <li><a href="#"><i class="ri-whatsapp-line text-white text-3xl"></i></a></li>
+                        <li><a href="#"><i class="ri-linkedin-fill text-white text-3xl"></i></a></li>
+                        <li><a href="#"><i class="ri-instagram-line text-white text-3xl"></i></a></li>
+                        <li><a href="#"><i class="ri-facebook-circle-line text-white text-3xl"></i></a></li>
+                        <li><a href="#"><i class="ri-pinterest-line text-white text-3xl"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Nav Links -->
+                <nav class="flex items-center h-2/3">
+                    <ul class="flex gap-5">
+                        <li class="relative group">
+                            <a href="#" class="text-white text-lg poppins-regular border-y-2 border-transparent hover:border-white">Home</a>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white text-lg poppins-regular border-y-2 border-transparent hover:border-white">About Us</a>
+                            <ul class="absolute top-full hidden group-hover:block bg-black text-white py-4 shadow-lg">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Founders</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Our Experience Center</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Team</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Contact Us</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Careers</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a href="#" class="text-white text-lg poppins-regular border-y-2 border-transparent hover:border-white">Our Services</a>
+                            <ul class="absolute top-full hidden group-hover:block bg-black text-white py-4 shadow-lg">
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Architecture</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Interior</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Furniture</a>
+                                </li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Furnishing and Styling</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="lg:hidden flex items-center">
+                <button id="menuToggle" class="text-white text-3xl"><i class="ri-menu-line"></i></button>
+            </div>
+        </header>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu"
+            class="fixed inset-0 bg-black bg-opacity-90 transform -translate-x-full transition-transform duration-300 z-50">
+            <div class="p-5">
+                <button id="closeMenu" class="text-white text-3xl"><i class="ri-close-line"></i></button>
+                <ul class="mt-10 space-y-5">
+                    <li>
+                        <a href="#" class="text-white text-xl">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" id="mobileAbout" class="text-white text-xl flex justify-between items-center">
+                            About Us <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul id="aboutDropdown" class="hidden ml-5 space-y-3 mt-3">
+                            <li><a href="#" class="text-white">Founders</a></li>
+                            <li><a href="#" class="text-white">Our Experience Center</a></li>
+                            <li><a href="#" class="text-white">Team</a></li>
+                            <li><a href="#" class="text-white">Contact Us</a></li>
+                            <li><a href="#" class="text-white">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" id="mobileServices" class="text-white text-xl flex justify-between items-center">
+                            Our Services <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul id="servicesDropdown" class="hidden ml-5 space-y-3 mt-3">
+                            <li><a href="#" class="text-white">Architecture</a></li>
+                            <li><a href="#" class="text-white">Interior</a></li>
+                            <li><a href="#" class="text-white">Furniture and Furnishing</a></li>
+                            <li><a href="#" class="text-white">Styling</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="hero_section"></section>
+    </main>
+
+    <!-- script js link  -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
