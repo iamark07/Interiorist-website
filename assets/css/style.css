@@ -15,3 +15,43 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.carousel-video {
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.carousel-video.active {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+#content-container {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  transform: translateY(200px) !important;
+}
+
+#content-container.active {
+  opacity: 1;
+  transform: translateY(0px) !important;
+}
+
+.carousel-dot.active {
+  opacity: 1;
+}
+
+/* hero section content animation */
+
+.hero_section_content {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 0.3s !important;
+}
+
+.hero_animation {
+  opacity: 1;
+  transform: translateY(0px) !important;
+}

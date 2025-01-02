@@ -20,7 +20,7 @@
 <body>
 
     <main>
-        <header class="bg-black py-3 lg:px-20 px-5 flex justify-between">
+        <header class="bg-black py-3 lg:px-20 px-5 flex justify-between relative z-50">
             <!-- Logo -->
             <div class="logo">
                 <img src="assets/img/logo.png" alt="logo" class="w-16 md:w-32 ">
@@ -43,26 +43,35 @@
                 <nav class="flex items-center h-2/3">
                     <ul class="flex gap-5">
                         <li class="relative group">
-                            <a href="#" class="text-white text-lg poppins-regular border-y-2 border-transparent hover:border-white">Home</a>
+                            <a href="#"
+                                class="text-white text-lg poppins-regular border-y-2 border-transparent hover:border-white">Home</a>
                         </li>
                         <li class="relative group">
-                            <a href="#" class="text-white text-lg poppins-regular border-y-2 border-transparent hover:border-white">About Us</a>
+                            <a href="#"
+                                class="text-white text-lg poppins-regular border-y-2 border-transparent hover:border-white">About
+                                Us</a>
                             <ul class="absolute top-full hidden group-hover:block bg-black text-white py-4 shadow-lg">
                                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Founders</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Our Experience Center</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Our Experience
+                                        Center</a></li>
                                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Team</a></li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Contact Us</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Contact Us</a>
+                                </li>
                                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Careers</a></li>
                             </ul>
                         </li>
                         <li class="relative group">
-                            <a href="#" class="text-white text-lg poppins-regular border-y-2 border-transparent hover:border-white">Our Services</a>
+                            <a href="#"
+                                class="text-white text-lg poppins-regular border-y-2 border-transparent hover:border-white">Our
+                                Services</a>
                             <ul class="absolute top-full hidden group-hover:block bg-black text-white py-4 shadow-lg">
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Architecture</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Architecture</a>
+                                </li>
                                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Interior</a></li>
                                 <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Furniture</a>
                                 </li>
-                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Furnishing and Styling</a></li>
+                                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700 text-nowrap">Furnishing and
+                                        Styling</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -111,7 +120,34 @@
             </div>
         </div>
 
-        <section class="hero_section"></section>
+        <!-- Hero Section -->
+        <section class="relative h-screen overflow-hidden">
+            <!-- Fade Layer -->
+            <div id="fade-layer" class="absolute inset-0 z-20 bg-black opacity-0 transition-opacity duration-500"></div>
+            <div class="absolute inset-0 z-10 bg-black opacity-50 transition-opacity duration-500"></div>
+            <!-- Carousel Images -->
+            <div class="absolute inset-0">
+                <div id="carousel-image" class="w-full h-full bg-cover bg-center transition-opacity duration-1000"
+                    style="background-image: url('assets/img/hero-1.jpg');"></div>
+            </div>
+
+            <!-- Carousel Content -->
+            <div class="absolute inset-0 z-10 flex flex-col items-center justify-center text-center p-6">
+                <h1 id="carousel-heading"
+                    class="text-4xl md:text-6xl text-white font-bold mb-4 transition-opacity duration-1000">Heading 1
+                </h1>
+                <p id="carousel-content" class="text-lg md:text-xl text-white transition-opacity duration-1000">Content
+                    for the first image goes here.</p>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div id="prev-slide" class="absolute top-1/2 left-4 transform -translate-y-1/2 z-30 cursor-pointer">
+                <span class="text-4xl text-white select-none">&#10094;</span>
+            </div>
+            <div id="next-slide" class="absolute top-1/2 right-4 transform -translate-y-1/2 z-30 cursor-pointer">
+                <span class="text-4xl text-white select-none">&#10095;</span>
+            </div>
+        </section>
     </main>
 
     <!-- script js link  -->
