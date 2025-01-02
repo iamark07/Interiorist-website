@@ -17,7 +17,7 @@
     <title>Interiorist</title>
 </head>
 
-<body>
+<body class="bg-black">
 
     <main>
 
@@ -153,6 +153,89 @@
             </div>
             <div id="next-slide" class="absolute top-1/2 right-4 transform -translate-y-1/2 z-30 cursor-pointer">
                 <span class="text-4xl text-white select-none">&#10095;</span>
+            </div>
+        </section>
+
+        <!-- Our Vision Section -->
+        <section class="relative py-20 flex items-center justify-center">
+            <!-- Background Image -->
+            <div class="absolute inset-0 bg-cover bg-center"
+                style="background-image: url('assets/img/vision-bg.jpeg');"></div>
+
+            <!-- Black Overlay -->
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 text-center text-white p-6">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">Our Vision</h2>
+                <p class="text-lg md:text-xl mb-6">
+                    experience the art of elegance and comfort with our designs.
+                </p>
+                <button class="bg-black text-white py-3 px-6 rounded-md hover:bg-gray-800 transition">
+                    Get to know more
+                </button>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section class="text-center mt-20 px-5 md:px-20">
+            <h2 class="text-4xl font-bold mb-10 text-white">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
+
+                <!-- Service Card -->
+                <div class="relative group h-72 overflow-hidden shadow-lg cursor-pointer">
+                    <img src="assets/img/service-1.jpg" alt="Service 1"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <h3 class="text-xl font-bold mb-2">Service One</h3>
+                        <p class="text-sm">We provide excellent service to meet your needs.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card -->
+                <div class="relative group h-72 overflow-hidden shadow-lg cursor-pointer">
+                    <img src="assets/img/service-2.jpeg" alt="Service 2"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <h3 class="text-xl font-bold mb-2">Service Two</h3>
+                        <p class="text-sm">Your satisfaction is our priority.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card -->
+                <div class="relative group h-72 overflow-hidden shadow-lg cursor-pointer">
+                    <img src="assets/img/service-3.jpeg" alt="Service 3"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <h3 class="text-xl font-bold mb-2">Service Three</h3>
+                        <p class="text-sm">Delivering innovative solutions.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card -->
+                <div class="relative group h-72 overflow-hidden shadow-lg cursor-pointer">
+                    <img src="assets/img/service-4.jpg" alt="Service 4"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <h3 class="text-xl font-bold mb-2">Service Four</h3>
+                        <p class="text-sm">Quality and expertise you can trust.</p>
+                    </div>
+                </div>
+
+                <!-- Service Card -->
+                <div class="relative group h-72 overflow-hidden shadow-lg cursor-pointer">
+                    <img src="assets/img/service-5.jpg" alt="Service 5"
+                        class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        <h3 class="text-xl font-bold mb-2">Service Five</h3>
+                        <p class="text-sm">Innovating for a better tomorrow.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
