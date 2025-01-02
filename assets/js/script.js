@@ -1,3 +1,18 @@
+// page reload and add hero section animation
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("page-loader");
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      loader.classList.add("opacity-0"); // Start fading out
+      setTimeout(() => {
+        loader.remove(); // Remove from DOM after fade-out
+      }, 500); // Match this duration to the fade-out transition
+    }, 300); // Initial load delay (optional)
+  });
+});
+
+
 // Mobile menu toggle
 const menuToggle = document.getElementById("menuToggle");
 const closeMenu = document.getElementById("closeMenu");
