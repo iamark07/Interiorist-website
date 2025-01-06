@@ -114,3 +114,70 @@ nextSlide.addEventListener("click", () => {
 
 // Initial Load
 updateSlide(currentIndex);
+
+
+
+
+
+
+// contact_form 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (e) {
+      // Prevent form submission initially
+      e.preventDefault();
+
+      // Clear previous error messages
+      let errors = false;
+
+      // Validate Full Name
+      let name = document.getElementById("name").value;
+      let nameError = document.getElementById("nameError");
+      if (name.length < 3) {
+        nameError.classList.remove("hidden");
+        errors = true;
+      } else {
+        nameError.classList.add("hidden");
+      }
+
+      // Validate Email
+      let email = document.getElementById("email").value;
+      let emailError = document.getElementById("emailError");
+      let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailPattern.test(email)) {
+        emailError.classList.remove("hidden");
+        errors = true;
+      } else {
+        emailError.classList.add("hidden");
+      }
+
+      // Validate Phone
+      let phone = document.getElementById("phone").value;
+      let phoneError = document.getElementById("phoneError");
+      if (!/^\d{10}$/.test(phone)) {
+        phoneError.classList.remove("hidden");
+        errors = true;
+      } else {
+        phoneError.classList.add("hidden");
+      }
+
+      // Validate Message
+      let message = document.getElementById("message").value;
+      let messageError = document.getElementById("messageError");
+      if (message.trim() === "") {
+        messageError.classList.remove("hidden");
+        errors = true;
+      } else {
+        messageError.classList.add("hidden");
+      }
+
+      // If no errors, submit the form
+      if (!errors) {
+        this.submit();
+      }
+    });
+});
+
